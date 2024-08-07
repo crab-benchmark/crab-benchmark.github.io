@@ -1,14 +1,17 @@
-# Nerfies
+# CRAB-project-page
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the repository that contains source code for the [CRAB project page](https://crab-benchmark.github.io).
 
-If you find Nerfies useful for your work please cite:
+If you find CRAB useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+@misc{xu2024crab,
+      title={CRAB: Cross-environment Agent Benchmark for Multimodal Language Model Agents}, 
+      author={Tianqi Xu and Linyao Chen and Dai-Jie Wu and Yanjun Chen and Zecheng Zhang and Xiang Yao and Zhiqiang Xie and Yongchao Chen and Shilong Liu and Bochen Qian and Philip Torr and Bernard Ghanem and Guohao Li},
+      year={2024},
+      eprint={2407.01511},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2407.01511}, 
 }
 ```
 

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="CRAB: Cross-environment Agent Benchmark for Multimodal Language Model Agents">
+  <meta name="keywords" content="Autonomous Agent, Benchmark, GUI automation, Multimodal Language Model">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CRAB: Cross-environment Agent Benchmark for Multimodal Language Model Agents</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">CRAB: Cross-environment Agent Benchmark for Multimodal Language
+              Model Agents</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://dandansamax.github.io/">Tianqi Xu</a><sup>1,2*</sup>,
+              </span>
+              <span class="author-block">
+                <a href="TODO">Linyao Chen</a><sup>3*</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://github.com/jaywu109">Dai-Jie Wu</a><sup>1*</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/yanjun-c-65166b190/">Yanjun Chen</a><sup>4*</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/zechengzhang/">Zecheng Zhang</a>,
+              </span>
+              <span class="author-block">
+                <a href="TODO">Xiang Yao</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://zhiqiangxie.com/">Zhiqiang Xie</a><sup>5</sup>
+              </span>
+              <span class="author-block">
+                <a href="https://aeroastro.mit.edu/realm/team/yongchao-chen/">Yongchao Chen</a><sup>6</sup>
+              </span>
+              <span class="author-block">
+                <a href="http://lsl.zone/">Shilong Liu</a><sup>7</sup>
+              </span>
+              <span class="author-block">
+                <a href="TODO">Bochen Qian</a><sup>8</sup>
+              </span>
+              <span class="author-block">
+                <a href="https://www.robots.ox.ac.uk/~phst/">Philip Torr</a><sup>9</sup>
+              </span>
+              <span class="author-block">
+                <a href="https://www.bernardghanem.com/">Bernard Ghanem</a><sup>1†</sup>
+              </span>
+              <span class="author-block">
+                <a href="https://ghli.org/">Guohao Li</a><sup>2,9†</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>KAUST,</span>
+              <span class="author-block"><sup>2</sup>Eigent.AI,</span>
+              <span class="author-block"><sup>3</sup>UTokyo,</span>
+              <span class="author-block"><sup>4</sup>CMU,</span>
+              <span class="author-block"><sup>5</sup>Stanford,</span>
+              <span class="author-block"><sup>6</sup>Harvard,</span>
+              <span class="author-block"><sup>7</sup>Tsinghua,</span>
+              <span class="author-block"><sup>8</sup>SUSTech,</span>
+              <span class="author-block"><sup>9</sup>Oxford</span>
+            </div>
+
+            <div class="is-size-6 publication-authors">
+              <span class="author-block"><sup>*</sup>Equal Contribution</span>
+              <span class="author-block"><sup>†</sup>Corresponding Author</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2407.01511" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2407.01511" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://github.com/camel-ai/crab" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- Dataset Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/camel-ai/crab/tree/main/crab-benchmark-v0"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-open-data"></i>
+                    </span>
+                    <span>CRAB Benchmark-v0</span>
+                  </a>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Paper video. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <!-- <h2 class="title is-3">Introduction Video</h2> -->
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/HAKC10pw-gM?si=hDlH3JKhveraJ4J1" frameborder="0"
+              allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <!--/ Paper video. -->
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <p>
+              CRAB aims to become a general-purpose agent benchmark framework for Multimodal Language Model (MLM)
+              agents. CRAB provides an end-to-end while easy-to-use framework to build agents, operate environments, and
+              create benchmarks to evaluate them, featuring three key components: cross-environment support, a graph
+              evaluator, and task generation. We present <i>CRAB Benchmark-v0</i>, developed using the CRAB framework,
+              which includes 100 tasks across 2 environments (Ubuntu and Android), tested with 4 different MLMs under 3
+              distinct communication settings.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <!-- Concurrent Work. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3 has-text-centered">Features</h2>
+          <div class="content has-text-justified">
+            <img src="./static/images/crab-main-diagram.png">
+            <ul>
+              <li><strong>Cross-environments</strong>: CRAB supports multiple environments, ensuring that
+                agents can seamlessly adapt and excel across different interfaces.</li>
+              <li><strong>Graph evaluatior</strong>: With fine-grained evaluation, CRAB goes beyond binary success rates
+                to provide a detailed analysis of agent performance, highlighting their strengths and pinpointing areas
+                for improvement.</li>
+              <li><strong>Task Generation</strong>: CRAB automates task creation using a graph-based method. By
+                combining multiple sub-tasks into complex tasks, CRAB generates dynamic tasks that closely mimic
+                real-world scenarios, saving time and reducing the effort required for manual task creation.</li>
+              <li><strong>Easy-to-use</strong>: All agent operations (actions), observations, and benchmark evaluators
+                are defined by Python functions. Therefore, adding a new environment to CRAB requires only a few lines
+                of Python code. The benchmark configuration follows the declarative programming paradigm, making it
+                really easy to reproduce any experiment environment.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--/ Concurrent Work. -->
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Demo1 -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Demo Videos</h2>
+        </div>
+      </div>
+
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content">
+            <p>
+              Open "Slack" in Ubuntu, navigate to "multi-modal-benchmark" channel, summarize the last two messages,
+              then
+              use "Messages" app in android phone to send the to the first contact in the list.
+            </p>
+            <p class="has-text-centered" style="color:#8A8B8C;">
+              Settings: OpenAI GPT-4o + Multi-agent by Functionality
+            </p>
+            <video id="dollyzoom" controls muted playsinline autoplay loop height="100%">
+              <source src="./static/videos/demo1_slack_to_message.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <!--/ Demo1 -->
+
+      <hr>
+
+      <!-- Demo2 -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content">
+            <p>
+              Open "Tasks" app on Android, check the first incomplete task, then perform the task according to its
+              description
+            </p>
+            <p class="has-text-centered" style="color:#8A8B8C;">
+              Settings: OpenAI GPT-4o + Multi-agent by Functionality
+            </p>
+            <video id="dollyzoom" controls muted playsinline autoplay loop height="100%">
+              <source src="./static/videos/demo2_task_to_settings.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <!--/ Demo2 -->
+
+      <hr>
+
+      <!-- Demo3 -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content">
+            <p>
+              Open "Calendar" app on Android, summarize all schedules today. Then, in Ubuntu, create a markdown file
+              at "/home/crab/assets/plan.md" with each event as a checkbox bullet point using Terminal and Vim.
+            </p>
+            <p class="has-text-centered" style="color:#8A8B8C;">
+              Settings: OpenAI GPT-4o + Single Agent
+            </p>
+            <video id="dollyzoom" controls muted playsinline autoplay loop height="100%">
+              <source src="./static/videos/demo3_calendar_to_vim.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <!--/ Demo3 -->
+
+      <hr>
+
+      <!-- Demo4 -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content">
+            <p>
+              Please open the X app on my phone, search for CAMEL-AI.org, check the latest post, summarize them, and
+              then send the summary to Tianqi Xu on Slack from my PC.
+            </p>
+            <p class="has-text-centered" style="color:#8A8B8C;">
+              Settings: OpenAI GPT-4o + Single Agent
+            </p>
+            <video id="dollyzoom" controls muted playsinline autoplay loop height="100%">
+              <source src="./static/videos/demo4_X_to_slack.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <!--/ Demo4 -->
+
+      <div class="content">
+        <p class="is-centered" style="color:#8A8B8C;">
+          Demo videos are edited for a better viewing experience. In actual execution, there are tens of seconds of
+          waiting time between each step.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <!-- Concurrent Work. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3 has-text-centered">Related Works</h2>
+
+          <div class="content has-text-justified">
+            <p>
+              We compare CRAB with existing GUI agents and benchmarks.
+            </p>
+
+            <img src="./static/images/crab-compare.png">
+
+            <p>The columns detail key features of each framework:</p>
+            <ul>
+              <li><strong>Interactive Environment</strong> indicates the presence of either interactive environments or
+                static datasets.</li>
+              <li><strong>Multimodal Observation</strong> specifies the availability of vision-based observations (e.g.
+                screenshots).</li>
+              <li><strong>Cross-platform</strong> denotes support for multiple operating systems or platforms.</li>
+              <li><strong>Evaluation</strong> describes the evaluation metrics, categorized as:
+                <ul>
+                  <li><strong>Goal-based:</strong> checking environment state according solely on the final goal.</li>
+                  <li><strong>Trajectory-based:</strong> comparing agent action trajectory with a gold actions sequence.
+                  </li>
+                  <li><strong>Multiple:</strong> varied across tasks.</li>
+                  <li><strong>Graph-based:</strong> a DAG with each node as an intermediate checkpoint.</li>
+                </ul>
+              </li>
+              <li><strong>Task Construction</strong> shows the task construction method, including:
+                <ul>
+                  <li><strong>Handmade:</strong> handcrafted by human.</li>
+                  <li><strong>LLM-inspired:</strong> using LLM to generate task drafts but still verified and annotated
+                    by human.</li>
+                  <li><strong>Template:</strong> generated by filling in the blanks in task templates.</li>
+                  <li><strong>Sub-task Composition:</strong> composing multiple sub-tasks to construct tasks and
+                    evaluators.</li>
+                </ul>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <!--/ Concurrent Work. -->
+    </div>
+  </section>
+
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@misc{xu2024crab,
+      title={CRAB: Cross-environment Agent Benchmark for Multimodal Language Model Agents}, 
+      author={Tianqi Xu and Linyao Chen and Dai-Jie Wu and Yanjun Chen and Zecheng Zhang and Xiang Yao and Zhiqiang Xie and Yongchao Chen and Shilong Liu and Bochen Qian and Philip Torr and Bernard Ghanem and Guohao Li},
+      year={2024},
+      eprint={2407.01511},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2407.01511}, 
+}</code></pre>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="./static/videos/nerfies_paper.pdf">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source
+                code</a> of this website,
+              we just ask that you link back to this page in the footer.
+              Please remember to remove the analytics code included in the header of the website which
+              you do not want on your website.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

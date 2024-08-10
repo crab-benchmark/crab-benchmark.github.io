@@ -244,7 +244,7 @@
             <p class="has-text-centered" style="color:#8A8B8C;">
               Settings: OpenAI GPT-4o + Multi-agent by Functionality
             </p>
-            <video id="dollyzoom" controls muted playsinline autoplay loop height="100%">
+            <video id="demo1" controls muted playsinline autoplay loop height="100%">
               <source src="./static/videos/demo1_slack_to_message.mp4" type="video/mp4">
             </video>
           </div>
@@ -265,7 +265,7 @@
             <p class="has-text-centered" style="color:#8A8B8C;">
               Settings: OpenAI GPT-4o + Multi-agent by Functionality
             </p>
-            <video id="dollyzoom" controls muted playsinline autoplay loop height="100%">
+            <video id="demo2" controls muted playsinline autoplay loop height="100%">
               <source src="./static/videos/demo2_task_to_settings.mp4" type="video/mp4">
             </video>
           </div>
@@ -286,7 +286,7 @@
             <p class="has-text-centered" style="color:#8A8B8C;">
               Settings: OpenAI GPT-4o + Single Agent
             </p>
-            <video id="dollyzoom" controls muted playsinline autoplay loop height="100%">
+            <video id="demo3" controls muted playsinline autoplay loop height="100%">
               <source src="./static/videos/demo3_calendar_to_vim.mp4" type="video/mp4">
             </video>
           </div>
@@ -307,7 +307,7 @@
             <p class="has-text-centered" style="color:#8A8B8C;">
               Settings: OpenAI GPT-4o + Single Agent
             </p>
-            <video id="dollyzoom" controls muted playsinline autoplay loop height="100%">
+            <video id="demo4" controls muted playsinline autoplay loop height="100%">
               <source src="./static/videos/demo4_X_to_slack.mp4" type="video/mp4">
             </video>
           </div>
@@ -376,6 +376,59 @@
   </section>
 
 
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <!-- Concurrent Work. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3 has-text-centered">Experiment Results</h2>
+
+          <div class="content has-text-justified">
+            <img src="./static/images/crab-result.png">
+            <ol>
+              <li><strong>Diverse Performance Across Models:
+                  Pro</strong>
+                <ul>
+                  <li>GPT-4o has the highest success rate and completion ratio overall.</li>
+                  <li>GPT-4 TURBO demonstrates improved cost efficiency (CE) compared to other models.</li>
+                  <li>Gemini 1.5 Pro and Claude 3 Opus struggle more, hardly complete the tasks.</li>
+                </ul>
+              </li>
+              <li><strong>Completion Ratios Reflect True Agent Capability:</strong>
+                <ul>
+                  <li>Completion Ratio (CR), which is computed by the graph evaluator, provides a detailed view of
+                    performance. GPT-4o achieves a CR of in single-agent mode, outperforming Gemini 1.5 Pro and Claude 3
+                    Opus.</li>
+                </ul>
+              </li>
+              <li><strong>Efficiency Metrics Highlight Strengths and Weaknesses:</strong>
+                <ul>
+                  <li>GPT-4 TURBO excels in cost efficiency in single-agent mode, demonstrating cost-effective
+                    performance.</li>
+                  <li>GPT-4o balances efficiency with performance, especially in single-agent mode.</li>
+                  <li>Gemini 1.5 Pro shows lower efficiency and incomplete CE metrics, mainly caused by its low
+                    completion ratio.</li>
+                </ul>
+              </li>
+              <li><strong>Termination Reasons Indicate Areas for Improvement:</strong>
+                <ul>
+                  <li>High Reach Step Limit (RSL) percentages across all models suggest agents often run out of steps
+                    and don't achieve the final goals of the tasks.</li>
+                  <li>Invalid Action (IA) rates are high for Gemini 1.5 Pro, highlighting issues in generating the
+                    action following the correct format.</li>
+                  <li>False Completion (FC) rates in multi-agent settings are higher than those in single-agent
+                    settings, indicating that message loss occurs during communication among multiple agents.</li>
+                </ul>
+              </li>
+            </ol>
+
+          </div>
+        </div>
+      </div>
+      <!--/ Concurrent Work. -->
+    </div>
+  </section>
 
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">

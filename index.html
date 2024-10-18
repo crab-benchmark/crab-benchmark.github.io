@@ -210,7 +210,7 @@
         <!-- Concurrent Work. -->
         <div class="columns is-centered">
           <div class="column is-full-width">
-            <h2 class="title is-3 has-text-centered">Leader Board</h2>
+            <h2 class="title is-3 has-text-centered">Leaderboard</h2>
           </div>
         </div>
         <!-- Comment Section -->
@@ -220,11 +220,13 @@
 
         <!-- Leader Board Table -->
         <div class="table-container">
-          <table class="table is-striped is-hoverable" style="width: max-content;">
+          <table class="table is-striped is-hoverable has-text-centered" style="width: max-content;">
             <thead>
               <tr>
+                <th>Organization</th>
                 <th>Model</th>
-                <th>Completion Ratio (%)</th>
+                <th>Completion Ratio (%) &#8593;</th>
+                <th>Success Rate (%)</th>
                 <th>Parameter Size</th>
                 <th>Visual Prompt</th>
                 <th>Structure Output Type</th>
@@ -233,56 +235,70 @@
             </thead>
             <tbody>
               <tr>
+                <td>OpenAI</td>
                 <td>gpt-4o-2024-05-13</td>
                 <td>38.01</td>
+                <td>14.17</td>
                 <td>Unknown</td>
                 <td>SoM (GroundingDino+EasyOCR)</td>
                 <td>Tool calling API</td>
                 <td>2024-10</td>
               </tr>
               <tr>
+                <td>OpenAI</td>
                 <td>gpt-4-turbo-2024-04-09</td>
                 <td>33.35</td>
+                <td>9.17</td>
                 <td>Unknown</td>
                 <td>SoM (GroundingDino+EasyOCR)</td>
                 <td>Tool calling API</td>
                 <td>2024-10</td>
               </tr>
               <tr>
+                <td>OpenAI</td>
                 <td>gpt-4o-2024-05-13</td>
                 <td>23.05</td>
+                <td>9.17</td>
                 <td>Unknown</td>
                 <td>SoM (GroundingDino+EasyOCR)</td>
                 <td>model-generated JSON</td>
                 <td>2024-10</td>
               </tr>
               <tr>
+                <td>Anthropic</td>
                 <td>claude-3-opus-20240229</td>
                 <td>19.60</td>
+                <td>3.33</td>
                 <td>Unknown</td>
                 <td>SoM (GroundingDino+EasyOCR)</td>
                 <td>Tool calling API</td>
                 <td>2024-10</td>
               </tr>
               <tr>
+                <td>Google</td>
                 <td>Gemini 1.5 PRO</td>
                 <td>15.48</td>
+                <td>3.33</td>
                 <td>Unknown</td>
                 <td>SoM (GroundingDino+EasyOCR)</td>
                 <td>Tool calling API</td>
                 <td>2024-10</td>
               </tr>
               <tr>
+                <td>Mistral AI</td>
                 <td>Pixtral-12B-2409</td>
                 <td>9.50</td>
+                <td>0.83</td>
                 <td>12B</td>
                 <td>SoM (GroundingDino+EasyOCR)</td>
                 <td>model-generated JSON</td>
                 <td>2024-10</td>
               </tr>
               <tr>
+                <td>ByteDance</td>
                 <td>llava-onevision-qwen2-72b-ov-chat</td>
                 <td>6.64</td>
+                <td>0.83</td>
                 <td>72B</td>
                 <td>SoM (GroundingDino+EasyOCR)</td>
                 <td>model-generated JSON</td>
